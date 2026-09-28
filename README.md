@@ -138,3 +138,14 @@ Hidden Layer 2
 Output Layer
 10 neurons
 ```
+
+### Architecture Details
+
+| Layer          | Neurons | Sigmoid Model | ReLU Model |
+| -------------- | ------: | ------------- | ---------- |
+| Input          |     784 | Input         | Input      |
+| Hidden Layer 1 |     128 | Sigmoid       | ReLU       |
+| Hidden Layer 2 |      64 | Sigmoid       | ReLU       |
+| Output         |      10 | Softmax       | Softmax    |
+
+The output layer uses Softmax activation in both models because the task involves classification into 10 mutually exclusive digit classes.
