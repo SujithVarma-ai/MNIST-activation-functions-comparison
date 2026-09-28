@@ -121,3 +121,20 @@ Testing                 Testing
        Model Comparison
              ↓
     Final Results and Insights
+```
+
+## Neural Network Architecture
+
+```text
+Input Layer
+784 neurons
+    ↓
+Hidden Layer 1
+128 neurons
+    ↓
+Hidden Layer 2
+64 neurons
+    ↓
+Output Layer
+10 neurons
+```
