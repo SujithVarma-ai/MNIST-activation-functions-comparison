@@ -149,3 +149,35 @@ Output Layer
 | Output         |      10 | Softmax       | Softmax    |
 
 The output layer uses Softmax activation in both models because the task involves classification into 10 mutually exclusive digit classes.
+
+## 🔵 Sigmoid Model
+
+The first neural network uses the Sigmoid activation function in both hidden layers.
+
+```text
+784 → 128 → 64 → 10
+       ↓      ↓
+    Sigmoid  Sigmoid
+                ↓
+             Softmax
+```
+
+### Sigmoid Model Configuration
+
+Input features: 784
+
+Hidden Layer 1: 128 neurons
+
+Hidden Layer 2: 64 neurons
+
+Hidden activation: Sigmoid
+
+Output activation: Softmax
+
+Optimizer: Adam
+
+Loss Function: Sparse Categorical Cross-Entropy
+
+Batch Size: 128
+
+Epochs: 10
