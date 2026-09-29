@@ -232,6 +232,34 @@ Therefore:
 28 × 28 = 784 input features
 ```
 
+## 📦 Model Parameters
+
+Both models use the same network architecture and therefore contain the same number of trainable parameters.
+
+#### Parameter Calculation
+
+First Dense Layer:
+
+```text
+(784 + 1) × 128 = 100,480
+
+Second Dense Layer:
+
+(128 + 1) × 64 = 8,256
+
+Output Layer:
+
+(64 + 1) × 10 = 650
+
+Total:
+
+100,480 + 8,256 + 650 = 109,386
+```
+
+Therefore, each model contains:
+
+109,386 trainable parameters
+
 ## 🛠️ Technology Stack
 
 #### Programming Language
