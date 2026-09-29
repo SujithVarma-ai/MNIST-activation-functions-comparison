@@ -226,10 +226,41 @@ Since the neural network uses fully connected Dense layers, the 28 × 28 images 
 
 X_train_flat = X_train.reshape(X_train.shape[0], 784)
 X_test_flat = X_test.reshape(X_test.shape[0], 784)
-```
 
 Therefore:
 
-```text
 28 × 28 = 784 input features
-```text
+```
+
+## 🛠️ Technology Stack
+
+#### Programming Language
+
+Python 3.13.15
+
+#### Deep Learning
+
+TensorFlow 2.20.0
+
+Keras
+
+#### Numerical Computing
+
+NumPy 2.1.3
+
+Pandas 2.2.3
+
+#### Visualization
+
+Matplotlib 3.10.0
+
+Seaborn 0.13.2
+
+#### Model Evaluation
+
+Scikit-learn 1.6.1
+
+#### Development Environment
+
+Google Colab
+
