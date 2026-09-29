@@ -211,3 +211,27 @@ Loss Function: Sparse Categorical Cross-Entropy
 Batch Size: 128
 
 Epochs: 10
+
+## ⚙️ Data Preprocessing
+
+The MNIST images originally contain pixel values ranging from 0 to 255.
+
+The pixel values were normalized to the range 0 to 1 using:
+
+```text
+X_train = X_train.astype("float32") / 255.0
+X_test = X_test.astype("float32") / 255.0
+```text
+
+Since the neural network uses fully connected Dense layers, the 28 × 28 images were flattened into 784-dimensional vectors:
+
+```text
+X_train_flat = X_train.reshape(X_train.shape[0], 784)
+X_test_flat = X_test.reshape(X_test.shape[0], 784)
+```text
+
+Therefore:
+
+```text
+28 × 28 = 784 input features
+```text
