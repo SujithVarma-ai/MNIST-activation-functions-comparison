@@ -238,9 +238,9 @@ Both models use the same network architecture and therefore contain the same num
 
 #### Parameter Calculation
 
+```text
 First Dense Layer:
 
-```text
 (784 + 1) × 128 = 100,480
 
 Second Dense Layer:
@@ -259,6 +259,32 @@ Total:
 Therefore, each model contains:
 
 109,386 trainable parameters
+
+## 📈 Model Training
+
+Both models were trained using the same configuration to maintain a fair comparison.
+
+```text
+Optimizer  : Adam
+
+Loss       : Sparse Categorical Cross-Entropy
+
+Batch Size : 128
+
+Epochs     : 10
+
+Validation : 10% of training data
+```
+
+The training process records:
+
+Training Accuracy
+
+Validation Accuracy
+
+Training Loss
+
+Validation Loss
 
 ## 🛠️ Technology Stack
 
