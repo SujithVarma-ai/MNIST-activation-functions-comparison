@@ -181,3 +181,33 @@ Loss Function: Sparse Categorical Cross-Entropy
 Batch Size: 128
 
 Epochs: 10
+
+## 🟢 ReLU Model
+
+The second neural network uses ReLU activation in both hidden layers.
+
+784 → 128 → 64 → 10
+       ↓      ↓
+      ReLU   ReLU
+                ↓
+             Softmax
+             
+### ReLU Model Configuration
+
+Input features: 784
+
+Hidden Layer 1: 128 neurons
+
+Hidden Layer 2: 64 neurons
+
+Hidden activation: ReLU
+
+Output activation: Softmax
+
+Optimizer: Adam
+
+Loss Function: Sparse Categorical Cross-Entropy
+
+Batch Size: 128
+
+Epochs: 10
