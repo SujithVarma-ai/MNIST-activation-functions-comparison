@@ -286,6 +286,35 @@ Training Loss
 
 Validation Loss
 
+## 📊 Results
+
+The final models were evaluated using the separate 10,000-image MNIST test dataset.
+
+#### Final Performance
+
+| Model       | Test Accuracy |   Test Loss | Misclassified Images |
+| ----------- | ------------: | ----------: | -------------------: |
+| Sigmoid ANN |    **97.33%** | **0.08598** |              **267** |
+| ReLU ANN    |    **97.70%** | **0.07862** |              **230** |
+
+#### Observations
+
+The Sigmoid model achieved:
+
+Test Accuracy: **97.33%**
+Test Loss: **0.08598**
+Misclassified Images: **267**
+
+The ReLU model achieved:
+
+Test Accuracy: **97.70%**
+Test Loss: **0.07862**
+Misclassified Images: **230**
+
+Under the experimental configuration used in this project, the ReLU model obtained a **0.37 percentage-point higher test accuracy** than the Sigmoid model.
+
+The ReLU model also produced **37** fewer misclassified images than the Sigmoid model.
+
 ## 🛠️ Technology Stack
 
 #### Programming Language
