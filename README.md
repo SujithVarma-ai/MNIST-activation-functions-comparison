@@ -150,6 +150,18 @@ Output Layer
 
 The output layer uses Softmax activation in both models because the task involves classification into 10 mutually exclusive digit classes.
 
+## 📊 Evaluation Metrics
+
+The performance of both models was evaluated using multiple metrics:
+
+- **Accuracy:** Measures the percentage of correctly classified images.
+- **Loss:** Measures the difference between predicted outputs and actual labels.
+- **Precision:** Measures how many predicted samples for a class are actually correct.
+- **Recall:** Measures how many actual samples of a class are correctly identified.
+- **F1-Score:** Provides a balance between precision and recall.
+- **Confusion Matrix:** Shows class-wise correct and incorrect predictions.
+- **Misclassified Images:** Visualizes test images that were incorrectly classified.
+
 ## 🔵 Sigmoid Model
 
 The first neural network uses the Sigmoid activation function in both hidden layers.
