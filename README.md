@@ -327,6 +327,19 @@ Under the experimental configuration used in this project, the ReLU model obtain
 
 The ReLU model also produced **37** fewer misclassified images than the Sigmoid model.
 
+## ❌ Error Analysis
+
+The predictions of both models were compared with the actual labels of the 10,000-image test dataset.
+
+The Sigmoid model misclassified **267 images**, while the ReLU model misclassified **230 images**.
+
+| Model | Misclassified | Error Rate |
+|---|---:|---:|
+| Sigmoid | 267 | 2.67% |
+| ReLU | 230 | 2.30% |
+
+Confusion matrices and misclassified images were analyzed to identify patterns in classification errors and determine which handwritten digits were more difficult for the models to distinguish.
+
 ## 🛠️ Technology Stack
 
 #### Programming Language
