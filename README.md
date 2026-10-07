@@ -298,6 +298,24 @@ Training Loss
 
 Validation Loss
 
+## 🔍 Comparative Analysis
+
+Both models use the same architecture, dataset, optimizer, loss function, batch size, and number of epochs. The only major difference is the activation function used in the hidden layers.
+
+| Feature | Sigmoid Model | ReLU Model |
+|---|---|---|
+| Architecture | 784–128–64–10 | 784–128–64–10 |
+| Hidden Activation | Sigmoid | ReLU |
+| Output Activation | Softmax | Softmax |
+| Optimizer | Adam | Adam |
+| Epochs | 10 | 10 |
+| Batch Size | 128 | 128 |
+| Test Accuracy | 97.33% | **97.70%** |
+| Test Loss | 0.08598 | **0.07862** |
+| Misclassified Images | 267 | **230** |
+
+Under the experimental configuration used in this project, the ReLU-based model achieved higher test accuracy, lower test loss, and fewer misclassified images than the Sigmoid-based model.
+
 ## 📊 Results
 
 The final models were evaluated using the separate 10,000-image MNIST test dataset.
